@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>颜色修改</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="index.html" class="back-arrow">
+            <i class="iconfont icon-left-arrow"></i>
+            <span>返回</span>
+        </a>
+        <h1>Ruff控制台</h1>
+    </header>
+    <div class="content">
+        <div class="ul-title">
+            <h2 class="ul-name">颜色控制</h2>
+        </div>
+        <ul class="ul-container">
+            <label>
+                <li class="ul-item">
+                    <div class="color-box" style="background-color: white;border: 1px solid #cccccc;"></div>
+                    <span>白色</span>
+                    <input type="radio" name="color" value="#ffffff" class="iradio_square-green">
+                </li>
+            </label>
+            <label>
+                <li class="ul-item">
+                    <div class="color-box" style="background-color: #000000;"></div>
+                    <span>黑色</span>
+                    <input type="radio" name="color" value="#000000" class="iradio_square-green">
+                </li>
+            </label>
+            <label>
+                <li class="ul-item">
+                    <div class="color-box" style="background-color: pink;"></div>
+                    <span>粉色</span>
+                    <input type="radio" name="color" value="#ffc0cb" class="iradio_square-green">
+                </li>
+            </label>
+            <label>
+                <li class="ul-item">
+                    <div class="color-box" style="background-color: lightskyblue;"></div>
+                    <span>浅天蓝色</span>
+                    <input type="radio" name="color" value="#87cefa" class="iradio_square-green">
+                </li>
+            </label>
+            <label>
+                <li class="ul-item">
+                    <div class="color-box" style="background-color: lightgreen;"></div>
+                    <span>浅绿色</span>
+                    <input type="radio" name="color" value="#90ee90" class="iradio_square-green">
+                </li>
+            </label>
+            <label>
+                <li class="ul-item">
+                    <div class="color-box" style="background-color: #fefc49;"></div>
+                    <span>浅黄色</span>
+                    <input type="radio" name="color" value="#fefc49" class="iradio_square-green">
+                </li>
+            </label>
+            <label>
+                <li class="ul-item">
+                    <div class="color-box" style="background-color: orange;"></div>
+                    <span>橘黄色</span>
+                    <input type="radio" name="color" value="#ffa500" class="iradio_square-green">
+                </li>
+            </label>
+            <label>
+                <li class="ul-item">
+                    <input type="text" style="width: 30%;" id="colorInput">
+                    <span>自定义(16进制值）</span>
+                </li>
+            </label>
+        </ul>
+
+        <button class="btn btn-primary" style="margin: 2.5rem auto;display: block;width: 50%;" id="colorSubmit">确认修改</button>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-item settings">
+            <i class="iconfont icon-settings"></i>
+            <span>设置</span>
+        </a>
+        <a href="about.html" class="footer-item">
+            <i class="iconfont icon-about"></i>
+            <span>关于</span>
+        </a>
+    </footer>
+</div>
+<script src="dist/color.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+// reset css
+html, body, h1, h2, h3, p, ul, li, button, input {
+  margin:0;
+  padding:0;
+}
+a {
+  background-color: transparent; /* 1 */
+  text-decoration: none;
+  color: #000;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+html, body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family:Helvetica,sans-serif;
+  font-size: 1.6rem; /* =16px */
+}
+button,
+input { /* 1 */
+  overflow: visible;
+  outline: 0;
+}
+input {
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  padding: .85rem .5rem;
+  color: #222;
+  line-height: normal;
+  font-size: 1.6rem;
+}
+input:focus {
+  border-color: #999;
+  -webkit-transition: border .15s;
+  transition: border .15s;
+}
+// button
+.btn {
+  display: inline-block;
+  border: 0;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: .25s ease-out;
+  transition: .25s ease-out;
+  vertical-align: middle;
+  padding: .85em 1.2em;
+  border-radius: 0;
+  background: #e6e6e6;
+  color: #333;
+}
+.btn-primary {
+  background: #0e90d2;
+  color: #fff;
+}
+// main body
+.container {
+  width: 100%;
+  height:100%;
+  background-color: #f4f4f4;
+  header {
+    background: #0e90d2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .back-arrow {
+      position: absolute;
+      height:100%;
+      padding-left: 1rem;
+      color: #ffffff;
+      display: inline-flex;
+      justify-content: center;
+      align-items:center;
+    }
+    h1 {
+      padding: 1rem 0;
+      font-size: 2rem;
+      color: #ffffff;
+      margin:auto;
+    }
+  }
+  .ul-title {
+    padding: 3rem 1rem 1rem;
+    .ul-name {
+      font-weight:lighter;
+    }
+  }
+  .content {
+    padding-bottom: 6rem;
+  }
+  .ul-container {
+    border-top: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    .ul-item {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      border-bottom: 2px solid #e6e6e6;
+      .mode-title {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        .mode-name {
+          font-weight:normal;
+          margin-left: 0.8rem;
+          font-size: 2rem;
+        }
+      }
+      .color-box {
+        height:2.4rem;
+        width:4rem;
+      }
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 6px 0 rgba(0,0,0,0.16);
+    .footer-item {
+      width: 50%;
+      height: 4.8rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin-left:0.6rem;
+      }
+    }
+  }
+}
+
+
+// switch component
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3.4rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.6rem;
+  width: 2.6rem;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.6rem);
+  -ms-transform: translateX(2.6rem);
+  transform: translateX(2.6rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+//iconfont
+.icon-auto {
+  color: #1296db;
+}
+.icon-sleep {
+  color: #00c7b2;
+}
+.iconfont {
+  font-size: 2rem !important;
+}
+.icon-color {
+  color: #ff3700;
+}
+
+//iCheck
+.icheckbox_square-green,
+.iradio_square-green {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  background: url(../img/green.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_square-green {
+  background-position: 0 0;
+}
+.icheckbox_square-green.checked {
+  background-position: -48px 0;
+}
+
+
+.iradio_square-green {
+  background-position: -120px 0;
+}
+.iradio_square-green:checked {
+  background-position: -168px 0;
+}
+

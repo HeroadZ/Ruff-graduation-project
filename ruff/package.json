@@ -1,0 +1,24 @@
+{
+    "name": "hello-ruff",
+    "version": "0.1.0",
+    "description": "first ruff app",
+    "author": "heroadZ",
+    "main": "src/index.js",
+    "ruff": {
+        "boards": {
+            "ruff-mbd-v1": "^4.2.0",
+            "*": "*"
+        },
+        "dependencies": {
+            "ky-016": "^2.0.4",
+            "home": "^0.1.8",
+            "hc-sr501": "^2.0.4",
+            "buzzer-gpio": "^0.2.4",
+            "gy-30": "^3.0.6",
+            "sound-01": "^1.1.6",
+            "lcd1602-pcf8574a-hd44780": "^0.2.7",
+            "promise": "^0.1.2"
+        },
+        "devDependencies": {}
+    }
+}
